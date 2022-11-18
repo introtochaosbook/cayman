@@ -109,7 +109,7 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: url('{{ site.baseurl }}/assets/images/mandel-header.png');
+  background-image: {{ 'assets/images/mandel-header.png' | relative_url }};
 
   @include large {
     padding: 3rem 6rem;
