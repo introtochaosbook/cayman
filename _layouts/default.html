@@ -23,8 +23,10 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <a href="{{ site.url }}">
+            <h1 class="project-name">{{ site.title }}</h1>
+        </a>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
         <a href="#todo" class="btn">Buy the Book</a>
         <a href="{{ site.images_url | relative_url }}" class="btn">Images</a>
