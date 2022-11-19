@@ -111,10 +111,6 @@ a {
   background-color: $header-bg-color;
   background-position-x: center;
 
-  h1 {
-    -webkit-text-stroke: 1px black;
-  }
-
   @include large {
     padding: 3rem 6rem;
   }
@@ -131,6 +127,7 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  -webkit-text-stroke: 1px black;
 
   @include large {
     font-size: 3.25rem;
@@ -148,7 +145,6 @@ a {
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
-  opacity: 0.7;
 
   @include large {
     font-size: 1.25rem;
