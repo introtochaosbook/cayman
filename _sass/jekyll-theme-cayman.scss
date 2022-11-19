@@ -109,6 +109,11 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
+  background-position-x: center;
+
+  h1, h2 {
+    mix-blend-mode: difference;
+  }
 
   @include large {
     padding: 3rem 6rem;
